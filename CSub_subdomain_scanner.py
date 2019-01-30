@@ -14,8 +14,8 @@ version = 2.2
 def parse_args():
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--domain', type='str', required=True, help='Target Domain.')
-    parser.add_argument('-o', '--output', type='str', required=False, help='Output to file.')
+    parser.add_argument('-d', '--domain', type=str, required=True, help='Target Domain.')
+    parser.add_argument('-o', '--output', type=str, required=False, help='Output to file.')
     return parser.parse_args()
 
 
